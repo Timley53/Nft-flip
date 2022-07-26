@@ -1,0 +1,184 @@
+body {
+  background-color: rgb(13, 7, 37);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(14, 14, 31);
+}
+
+.contain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-1 {
+  width: 220px;
+  height: 500px;
+  background-color: rgb(27, 27, 63);
+  padding: 20px;
+  margin-top: 5%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.first-1 h2 {
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.first-1 h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  color: rgb(105, 105, 144);
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.first-1 h3 > span {
+  font-size: small;
+}
+
+.contain .price {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.price p:nth-child(1) {
+  color: rgba(0, 255, 255, 0.76);
+}
+
+.price p:nth-child(2) {
+  color: rgba(121, 48, 189, 0.644);
+}
+
+.line {
+  margin-top: 10px;
+  background-color: aqua;
+  height: 1px;
+}
+
+.first-1 img {
+  animation-name: rotate;
+  animation-direction: normal;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  /* transform: rotateY(4turn); */
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateY(1turn);
+  }
+}
+
+.second-2 {
+  width: 220px;
+  height: 500px;
+  background-color: rgb(27, 27, 63);
+  padding: 20px;
+  margin-top: 5%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.second-2 h2 {
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.second-2 h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  color: rgb(105, 105, 144);
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.second-2 h3 > span {
+  font-size: small;
+}
+
+.contain .price {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.price p:nth-child(1) {
+  color: rgba(0, 255, 255, 0.76);
+}
+
+.price p:nth-child(2) {
+  color: rgb(105, 105, 144);
+}
+
+.line {
+  margin-top: 10px;
+  background-color: aqua;
+  height: 1px;
+}
+
+.second-2 img {
+  animation-name: rotate;
+  animation-direction: normal;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+  /* transform: rotateY(4turn); */
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateY(1turn);
+  }
+}
+
+.menu {
+  margin-left: 20px;
+  position: relative;
+  /* background-color: azure; */
+  width: 20px;
+  height: 10px;
+  /* overflow: hidden; */
+}
+
+.fa-bars {
+  padding: 5px;
+}
+
+.menu .nav {
+  position: absolute;
+  display: none;
+  margin-top: 2px;
+}
+
+.menu .nav a {
+  display: block;
+  padding: 20px;
+  background-color: black;
+}
+
+.menu:hover .nav {
+  display: block;
+  transition: all 1s;
+}
+/* .menu:hover{
+    overflow: visible;
+    transition: all 1s;
+} */
